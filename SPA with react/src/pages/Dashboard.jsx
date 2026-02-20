@@ -1,9 +1,14 @@
 import React from 'react';
+import {NavLink, Outlet} from "react-router-dom";
 
 function Dashboard(props) {
     return (
-        <div>
-            this is dash board page
+        <div id={'dashboard'} >
+            <div id="sidbar">
+                <NavLink to={'Profile'}>profile</NavLink>
+                <NavLink to={'Payments'}>payments</NavLink>
+            </div>
+            <Outlet/>
         </div>
     );
 }

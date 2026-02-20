@@ -5,9 +5,11 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="header__navbar">
-                <li><NavLink to="/">home</NavLink></li>
-                <li><NavLink to="/posts">posts</NavLink></li>
-                <li><NavLink to="/dashboard">dashboard</NavLink></li>
+                <li><NavLink end to="">home</NavLink></li>
+                <li><NavLink to="posts">posts</NavLink></li>
+                <li><NavLink to="dashboard">dashboard</NavLink></li>
+                <li><NavLink to="Login">login</NavLink></li>
+
             </nav>
         </header>
     );
